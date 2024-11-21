@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: red; /* Fondo rojo para toda la página */
+}
+header {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+nav a:hover {
+    background-color: white; /* Fondo blanco al pasar el ratón */
+    color: black; /* Texto negro al pasar el ratón */
+    border-radius: 5px;
+}
+main {
+    padding: 20px;
+    text-align: center;
+    background-color: blue;
+    color: white;
+    margin: 10px;
+    border-radius: 5px;
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+#carrito {
+    position: relative;
+    display: inline-block;
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+}
+#cantidad-carrito {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: yellow;
+    color: black;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 14px;
+}
