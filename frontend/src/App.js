@@ -59,6 +59,11 @@ function App() {
   // Registro de usuario
   const handleRegistro = async (e) => {
     e.preventDefault();
+    if (!usuarioRegistrado || !correoRegistrado || !contraseñaRegistrado || !direccionRegistrado) {
+      alert("Por favor, completa todos los campos.");
+      return;
+    }
+
     const nuevoUsuario = {
       usuario: usuarioRegistrado,
       correo: correoRegistrado,
